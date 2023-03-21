@@ -1,6 +1,6 @@
 // Ouvrir la fenêtre modale lorsque l'utilisateur clique sur le bouton
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("myBtn");
+var modal = document.getElementById("modal");
+var btn = document.getElementById("btnreserver");
 var span = document.getElementsByClassName("close")[0];
 
 btn.onclick = function() {
@@ -18,4 +18,3 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-
