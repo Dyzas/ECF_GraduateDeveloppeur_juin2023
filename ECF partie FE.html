@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta charset="UTF-8" />
+    <title>Le Quai Antique - Restaurant</title> 
+    <link rel="stylesheet" href="C:\DevWeb\style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@glidejs/glide/dist/css/glide.theme.min.css">
+    <link rel="stylesheet" href="C:\DevWeb\modal.css">
+    <script src="C:\DevWeb\jspourecf.js"></script>
+    <?php include("../includes/ECFBackend.php"); ?>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="C:\DevWeb\ECF-FE-menu.html">Menu</a></li>
+          <li><a href="#reservation">Réservation</a></li>
+        </ul>
+      </nav>     
+      <img src="https://images.brandsupply.com/design_logo-artswithtom-IB9QzYCu_245_170.jpg" alt="Logo Le Quai Antique" />
+      <section id="login">
+        <h2>Connexion</h2>
+        <form>
+          <label for="email">Adresse email :</label>
+          <input type="email" id="email" name="email" required />
+          <label for="password">Mot de passe :</label>
+          <input type="password" id="password" name="password" required />
+          <input type="submit" value="Se connecter" />
+        </form>
+      </section>
+    </header>
+    <section id="banner">
+      <h1>Le Quai Antique</h1>
+      <p>Un lieu unique pour les amateurs de gastronomie</p>
+      <div class="images-container" style="text-align: right;">
+        <div style="width: 20%; float:right;">
+          <img src="https://images.ctfassets.net/abth1wsqvsx6/4qGNsNikjjPezcwEmVdqg8/d8b237d540dce913af9465c858757099/2022-blog-inspirations-hero-accompagnement-foie-gras-desktop-840x850.jpg?fm=jpg" alt="foiegras" style="width: 100%;">
+          <p>Foie gras</p>
+        </div>
+        <div style="width: 20%; float:right;">
+          <img src="https://img.cuisineaz.com/660x660/2013/12/20/i2126-cote-de-boeuf-au-thym-et-au-romarin.jpeg" alt="cote-de-boeuf-grillé" style="width: 100%;">
+          <p>Côte de boeuf grillée</p>
+        </div>
+        <div style="width: 20%; float:right;">
+          <img src="https://files.meilleurduchef.com/mdc/photo/recette/tarte-fine-aux-pommes/tarte-fine-aux-pommes-1200.jpg" alt="tarte-fine-aux-pommes-640" style="width: 100%;">
+          <p>Tarte aux pommes</p>
+        </div>
+      </div>
+    </section>
+    <section id="about" style="display: inline-block;">
+      <h2>À propos</h2>
+      <p>Le Quai Antique est un restaurant gastronomique situé dans le centre historique de la ville. Nous vous proposons une cuisine raffinée à base de produits frais et locaux, dans un cadre authentique et chaleureux.</p>
+    </section>   
+    <section id="reservation">
+      <h2>Réservation</h2>
+        <p>Veuillez sélectionner une date et une heure pour votre réservation :</p>
+      <div id="reservation-form">
+       <button id="btnreserver" onclick="openModal()">Réserver</button>
+       <div id="modal" class="modal">
+         <div class="modal-content">
+           <span class="close">&times;</span>
+           <form id="form-reservation" method="POST">
+             <label for="date">Date :</label>
+             <input type="date" id="date" name="date" required />
+             <label for="time">Heure :</label>
+             <input type="time" id="time" name="time" min="12:00" max="22:00" required />
+             <label for="couverts">Nombre de couverts :</label>
+             <input type="number" id="couverts" name="couverts" min="1" max="20" required />
+             <label for="allergies">Allergies :</label>
+             <textarea id="allergies" name="allergies"></textarea>
+             <input type="submit" value="Réserver" />
+           </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <footer>
+    <p>Horaires d'ouverture: 12h00 - 14h30, 19h00 - 22h30</p>
+  </footer>
+  
+</html>     
+      
+      
