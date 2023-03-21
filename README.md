@@ -4,7 +4,7 @@ application vitrine pour un restaurant
 
 Cette application a était réaliser de manière a ce que le patron, qui sera la première personne a se créer un compte obtiendra les droits d'administrateur, les autres comptes créés ensuite seront de simple compte client 
  
-Mon script SQL pour la création et l’alimentation de ma base de donnée: 
+Mon script SQL pour la création de ma base de donnée: 
 
 -- Créer une base de données appelée "myDB" 
 
