@@ -1,30 +1,8 @@
 # ECF_GraduateDeveloppeur_juin2023
+
 application vitrine pour un restaurant
 
-Chartes Graphique de mon application : 
-
-Couleurs : 
-
-Couleur de fond du corps de la page : #f4f4f4 
-
-Couleur de fond de l'en-tête : #333 
-
-Couleur de fond de la bannière : image de fond 
-
-Couleur de fond des sections : #fff 
-
-Couleur de fond du pied de page : #333 
-
-Couleur du texte : #fff et #333 (dans le corps de la page) 
-
-Typographie : 
-
-Police de caractères du corps de la page : 'Montserrat', sans-serif 
-
-Police de caractères des titres : 'Playfair Display', serif 
-
-Police de caractères du texte : 'Open Sans', sans-serif 
-
+Cette application a était réaliser de manière a ce que le patron, qui sera la première personne a se créer un compte obtiendra les droits d'administrateur, les autres comptes créés ensuite seront de simple compte client 
  
 Mon script SQL pour la création et l’alimentation de ma base de donnée: 
 
