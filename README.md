@@ -1,8 +1,12 @@
 # ECF_GraduateDeveloppeur_juin2023
 
 application vitrine pour un restaurant
+Cette application est composé de ça page d'acceuil 3 paragraphes important, 3 images plats
+ça page menu , une fenêtre modal pour les réservations,et un système de compte client pour la fidélité.
+construit avec du HTML 5 et du CSS 3 et du JavScript pour le front-end
+du php et un script MySQL pour le back-end
 
-Cette application a était réaliser de manière a ce que le patron, qui sera la première personne a se créer un compte obtiendra les droits d'administrateur, les autres comptes créés ensuite seront de simple compte client 
+Cette application a était réaliser de manière a ce que le patron sera la première personne a se créer un compte obtiendra les droits d'administrateur, les autres comptes créés ensuite seront de simple compte client 
  
 Mon script SQL pour la création de ma base de donnée: 
 
