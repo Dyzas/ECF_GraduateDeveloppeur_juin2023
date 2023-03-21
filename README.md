@@ -1,24 +1,6 @@
 # ECF_GraduateDeveloppeur_juin2023
 application vitrine pour un restaurant
 
-Spécification Technique : 
-
-Front-End : 
-
-HTML 5 
-
-CSS 3 
-
-JavaScript 
-
-Back-End : 
-
-PHP 8.2.4 
-
-MySQL 
-
-HTTP POST 
-
 Chartes Graphique de mon application : 
 
 Couleurs : 
