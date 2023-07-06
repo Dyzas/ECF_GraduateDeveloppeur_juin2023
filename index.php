@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="https://unpkg.com/@glidejs/glide/dist/css/glide.core.min.css">
     <link rel="stylesheet" href="https://unpkg.com/@glidejs/glide/dist/css/glide.theme.min.css">    
     <script src="./jspourecf.js"></script>
-    <?php require "Ecfnewbackend.php"; ?>
   </head>
   <body>
+  <?php require "Ecfnewbackend.php"; ?>
     <header>
       <nav>
         <ul>
@@ -93,6 +93,7 @@
         </div>
       </div>
     </section>
+    <script src="./modal.css"></script>
     <script src="./modal.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@^3.4.1/dist/glide.min.js"></script>
     <script> 
