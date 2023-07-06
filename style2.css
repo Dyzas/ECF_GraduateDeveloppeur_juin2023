@@ -1,7 +1,7 @@
 /* Styles pour la page menu */
 body {
+    background: linear-gradient(to bottom,#fa9959,#faf9f8);
     font-family: 'Montserrat', sans-serif;
-    background-color: #fff;
     color: #333;
     margin: 0;
   }
@@ -51,8 +51,9 @@ body {
   
   /* Styles pour les liens */
   a {
-    color: #2980b9;
-    text-decoration: none;
+    font-size: 35px;
+    text-align: right;
+    color: #333;
   }
   
   a:hover {
@@ -105,4 +106,49 @@ body {
     max-width: 800px;
     padding: 40px;
   }
+   /* Navigation */
+   nav {
+    display: flex;
+    align-items: center;
+  }
   
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 30px;
+  }
+  
+  nav ul li a {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  nav ul li a:hover {
+    color: #f5deb3;
+  }
+    /* Footer */
+    footer {
+      background-color: #ff8c00;
+      height: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 30px;
+    }
+    
+    /* Footer Hours */
+    .hours {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      color: white;
+    }
+     

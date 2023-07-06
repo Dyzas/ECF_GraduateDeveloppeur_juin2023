@@ -40,6 +40,6 @@ created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 
 );
 
--- Insérer un utilisateur admin pour les tests
+-- Insérer un utilisateur admin pour les tests (modifier ses valeurs pour avoir un compte administrateur)
 
 INSERT INTO users (email, password, role) VALUES ('admin@example.com', '$2y$10$BUEtVivMq3jKQf.ksZj5ROXe5AbTxnROvm7VbmCvFX1hQVgS5S8jW', 'admin');

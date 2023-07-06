@@ -1,20 +1,46 @@
-// Ouvrir la fenêtre modale lorsque l'utilisateur clique sur le bouton
-var modal = document.getElementById("modal");
-var btn = document.getElementById("btnreserver");
-var span = document.getElementsByClassName("close")[0];
+Wdocument.addEventListener("DOMContentLoaded", function() {
+  const imageTitles = document.querySelectorAll(".image-title");
+  imageTitles.forEach((title) => {
+    title.style.display = "none";
+    title.parentElement.addEventListener("mouseover", () => {
+      title.style.display = "block";
+    });
+    title.parentElement.addEventListener("mouseout", () => {
+      title.style.display = "none";
+    });
+  });
 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
+  // Récupération de la fenêtre modale et du bouton pour l'ouvrir
+  const modal = document.getElementById("modal");
+  const btn = document.getElementById("btnSubmitReserver");
 
-// Fermer la fenêtre modale lorsque l'utilisateur clique sur le bouton "X"
-span.onclick = function() {
-  modal.style.display = "none";
-}
+  // Récupération de la croix pour fermer la fenêtre modale
+  const closeBtn = document.getElementsByClassName("close")[0];
 
-// Fermer la fenêtre modale lorsque l'utilisateur clique en dehors de la fenêtre
-window.onclick = function(event) {
-  if (event.target == modal) {
+  // Fonction pour ouvrir la fenêtre modale
+  function openModal() {
+    modal.style.display = "block";
+  }
+
+  // Fonction pour fermer la fenêtre modale
+  function closeModal() {
     modal.style.display = "none";
   }
-}
+
+  // Ajout d'un gestionnaire d'événement au bouton pour ouvrir la fenêtre modale
+  btn.addEventListener("click", function() {
+    openModal();
+  });
+
+  // Fermer la fenêtre modale si l'utilisateur clique sur la croix
+  closeBtn.addEventListener("click", function() {
+    closeModal();
+  });
+
+  // Fermer la fenêtre modale si l'utilisateur clique en dehors de la fenêtre
+  window.addEventListener("click", function(event) {
+    if (event.target === modal) {
+      closeModal();
+    }
+  });
+});
